@@ -537,3 +537,22 @@ html {
     max-width: 95vw;
   }
 }
+
+/* Responsive Design for Mobile View */
+@media (max-width: 768px) {
+  .navbar-links-container {
+    display: none;
+  }
+
+  .navbar-menu-container {
+    display: flex;
+  }
+
+  .navbar-menu-container svg {
+    font-size: 1.25rem; /* Smaller menu icon */
+  }
+
+  .MuiDrawer-paper {
+    width: 100%; /* Ensure the drawer fits the screen width */
+  }
+}
