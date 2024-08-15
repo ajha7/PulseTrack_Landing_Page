@@ -7,7 +7,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container" id="/home-section">
       <Navbar />
       <div className="home-banner-container">
         <div className="home-text-section">
@@ -15,9 +15,7 @@ const Home = () => {
             PulseTrack
           </h1>
           <p className="primary-text">
-            Empower your organization with deep insights from internal communication channels. 
-            <br></br>
-            Analyze meetings and messages to uncover key issues and deliver actionable reports.
+            Saving executives hundreds of hours. 
           </p>
           <a href="https://forms.gle/bbZPJJyhr7qXX1mR6" target="_blank">
             <button className="secondary-button">

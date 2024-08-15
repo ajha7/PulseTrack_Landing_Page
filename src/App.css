@@ -22,27 +22,72 @@ body {
   background-color: #f6f6f6; /* Fallback color */
 }
 
-
 body {
   background-color: #f6f6f6;
 }
+/* styles.css or your CSS file */
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 90px;
+  position: fixed; /* Fixes the navbar to the top of the viewport */
+  top: 0; /* Aligns it to the top of the viewport */
+  left: 0; /* Aligns it to the left side of the viewport */
+  width: 100%; /* Makes the navbar span the full width of the viewport */
+  min-height: 60px; /* Sets the minimum height of the navbar */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out items */
+  background-color: #fff; /* Background color (adjust as needed) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual separation */
+  z-index: 1000; /* Ensures it stays above other content */
+  padding: 0 1rem; /* Padding on the left and right */
 }
-.navbar-menu-container {
-  display: none;
+
+.nav-logo-container img {
+  height: 40px; /* Adjust the logo size as needed */
 }
+
+.navbar-links-container {
+  display: flex; /* Use flexbox for links */
+  align-items: center; /* Center links vertically */
+}
+
 .navbar-links-container a {
-  margin-right: 3rem;
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  font-weight: 600;
+  margin-right: 3rem; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  color: black; /* Link color */
+  font-size: 1.1rem; /* Font size */
+  font-weight: 600; /* Font weight */
 }
+
+.navbar-links-container a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.navbar-menu-container {
+  display: none; /* Hide menu button on large screens */
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+  .navbar-links-container {
+    display: none; /* Hide links on small screens */
+  }
+  
+  .navbar-menu-container {
+    display: block; /* Show menu button on small screens */
+  }
+}
+
+/* Style adjustments for the drawer menu */
+.MuiDrawer-paper {
+  width: 250px; /* Width of the drawer menu */
+}
+
+/* Padding to prevent overlap with fixed navbar */
+.content {
+  padding-top: 90px; /* Same as navbar height to avoid overlap */
+}
+
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: white;
@@ -87,18 +132,30 @@ nav {
   justify-content: center;
   align-items: flex-start;
 }
+
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   color: #f5f6f4;
   /* line-height: 5rem; */
   max-width: 600px;
 }
-.primary-text {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  max-width: 500px;
-  color: #fdfbfb;
-  margin: 1.5rem 0rem;
+
+.work-bottom-text {
+  font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive font size */
+  color: #f9f6f6;
+  margin: 1rem 0;
+  font-weight: 100;
+  text-align: center;
 }
+
+.primary-text {
+  font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive font size */
+  max-width: 500px; /* Maximum width of the text container */
+  color: #fdfbfb; /* White text color */
+  margin: 1.5rem 0; /* Margin for spacing */
+  font-weight: 300; /* Thinner font weight (adjust as needed) */
+}
+
 .secondary-button {
   padding: 1rem 2.5rem;
   background-color: #fe9e0d;
@@ -114,6 +171,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 .secondary-button svg {
   margin-left: 0.75rem;
   font-size: 1.5rem;
@@ -121,13 +179,33 @@ nav {
 .secondary-button:hover {
   background-color: #e48f0f;
 }
+
 .about-section-container {
-  margin-top: 20rem;
+  margin-top: 15rem; /* Adjust as needed */
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items across the container */
+  width: 100vw;
+  padding: 0 1rem; /* Optional: Add horizontal padding */
 }
+
+.primary-heading-about {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #f5f6f4;
+  /* line-height: 5rem; */
+  max-width: 5000px;
+  text-align: center;
+}
+.primary-text-about {
+  font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive font size */
+  max-width: 5000px; /* Maximum width of the text container */
+  color: #fdfbfb; /* White text color */
+  margin: 1.5rem 0; /* Margin for spacing */
+  font-weight: 100; /* Thinner font weight (adjust as needed) */
+  text-align: center;
+}
+
 .about-background-image-container {
   position: absolute;
   left: -150px;
@@ -137,16 +215,57 @@ nav {
   flex: 0.9;
   margin-right: 1rem;
 }
+
 .about-section-text-container {
   flex: 1;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
+
+.home-banner-container,
+/* .about-section-container {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+} */
+/*
+.about-section-container {
+  flex-direction: column;
+}
+.home-image-section,
+.about-section-image-container {
+  width: 100%;
+  max-width: 4
+  00px;
+}
+.about-section-text-container {
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.about-section-container {
+  margin-top: 5rem !important;
+}
+.about-buttons-container {
+  justify-content: center;
+  flex-direction: column;
+}
+.about-section-image-container {
+  margin-right: 0rem !important;
+}
+@media (max-width: 600px) {
+  .home-bannerImage-container,
+  .about-background-image-container {
+    display: none;
+  }
+} */
 .primary-subheading {
+  position: relative;
   font-weight: 700;
   color: #fe9e0d;
   font-size: 1.15rem;
+  text-align: center;
 }
 .about-buttons-container {
   margin-top: 2rem;
@@ -359,20 +478,6 @@ html {
   .home-bannerImage-container {
     max-width: 450px;
   }
-  .home-banner-container,
-  .about-section-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
-  .about-section-container {
-    flex-direction: column;
-  }
-  .home-image-section,
-  .about-section-image-container {
-    width: 100%;
-    max-width: 400px;
-  }
   .primary-heading {
     text-align: center;
     max-width: 90%;
@@ -382,22 +487,10 @@ html {
     max-width: 80%;
   }
   .home-text-section,
-  .about-section-text-container {
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-  }
   .secondary-button {
     font-size: 1rem;
     padding: 0.8rem 2rem;
     cursor: pointer;
-  }
-  .about-section-container {
-    margin-top: 5rem !important;
-  }
-  .about-buttons-container {
-    justify-content: center;
-    flex-direction: column;
   }
   .primary-subheading {
     text-align: center;
@@ -409,9 +502,6 @@ html {
   }
   .watch-video-button svg {
     margin-right: 0.5rem !important;
-  }
-  .about-section-image-container {
-    margin-right: 0rem !important;
   }
   .work-section-wrapper {
     margin-top: 5rem !important;
@@ -445,11 +535,5 @@ html {
   }
   .App {
     max-width: 95vw;
-  }
-}
-@media (max-width: 600px) {
-  .home-bannerImage-container,
-  .about-background-image-container {
-    display: none;
   }
 }

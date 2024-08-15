@@ -2,7 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="contact-page-wrapper">
+    <div className="contact-page-wrapper" id="contact-section">
+      <p className="primary-subheading">Contact</p>
       <h1 className="primary-heading">Eager to learn more?</h1>
       <div className="primary-text">
         {/* <input type="text" placeholder="yourmail@gmail.com" />

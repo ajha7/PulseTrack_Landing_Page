@@ -4,7 +4,7 @@ import Integrations from "../Assets/integrations.png"
 // import ChooseMeals from "../Assets/choose-image.png";
 import Opensearch from "../Assets/opensearch_title.png"
 // import DeliveryMeals from "../Assets/delivery-image.png";
-import Piechart from "../Assets/piechart.png"
+import Piechart from "../Assets/piechart2.png"
 
 const Work = () => {
   const workInfoData = [
@@ -25,12 +25,12 @@ const Work = () => {
     },
   ];
   return (
-    <div className="work-section-wrapper">
+    <div className="work-section-wrapper" id="work-section">
       <div className="work-section-top">
         <p className="primary-subheading">Work</p>
         <h1 className="primary-heading">How It Works</h1>
         <p className="primary-text">
-        Deploy our app on your communication platforms like Zoom, Slack, or Webex. 
+        Deploy our app on your communication platforms. 
         It monitors conversations to extract and aggregate problems discussed. 
         The aggregated data is analyzed to provide a comprehensive dashboard, highlighting the most frequently mentioned issues within your organization.
         </p>
@@ -47,15 +47,15 @@ const Work = () => {
         ))}
       </div>
 
-      <div className = "primary-text">
+      <div className = "work-bottom-text">
         <br></br>
         <br></br>
         <h3>
         But is my data secure?
         </h3>
-        <p>
-        All your data is stored on Opensearch, which is SOC-2 compliant.
-        Additionally, the app does all its processing locally, so your data is not being sent ​to external servers.
+        <p className="work-bottom-text">
+        All your data is stored on Opensearch, which is <b>SOC-2 compliant. </b>
+         <br></br>Additionally, the application processes data locally, so your data is not being sent ​to external servers.
         </p>
       </div>
     </div>
