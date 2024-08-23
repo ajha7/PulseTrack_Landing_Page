@@ -9,6 +9,8 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <div className="App">
+      <br></br><br></br><br></br><br></br>
+      *Landing page in progress, update on: 08/26/2024*
       <Home path="/"/>
       <About path="/about"/>
       <Work path="/work" />
