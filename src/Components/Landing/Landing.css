@@ -1,0 +1,16 @@
+/* #grid-container {
+    display: grid;
+    grid-template-rows: 5% 120%;
+    grid-template-areas: "topbar" "mainbar";
+    height: 100vh;
+}
+
+#topbar-landing {
+    grid-area: "topbar";
+    background-color: white;
+}
+
+#mainbar-landing {
+    grid-area: "mainbar";
+    background-color: white;
+} */

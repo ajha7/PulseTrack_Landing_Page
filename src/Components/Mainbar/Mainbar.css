@@ -1,0 +1,116 @@
+#landing-message-container {
+    position: relative;
+    background-color: #161132;
+    height: 70vh;
+}
+
+#landing-use-case-container {
+    background-color: white;
+    height: 100vh;
+}
+
+#pulsetrack-landing-typography {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 45%;
+    text-align: left;
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+}
+
+#pulsetrack-landing-submessage {
+    position: absolute;
+    top: 60%;
+    left: 35.5%;
+}
+
+#landing-use-case-container {
+    position: relative;
+}
+
+#use-case-hello {
+    position: absolute;
+}
+
+
+
+#how-it-works-container {
+    position: relative;
+    height: 50vh;
+    /* background-color: blue; */
+    color: #4FFEEB;
+    background-color: #161132;
+    max-width: 100%;
+}
+
+#hit-title {
+    position: relative;
+    left: 17.5%;
+    top: 5%;
+}
+
+#hit-subtext {
+    position: relative;
+    left: 16%;
+    color: #FF9900
+}
+
+#hit-subtext-2 {
+    position: absolute;
+    left: 25%;
+    text-align: center;
+    top: 40%;
+}
+
+#hit-last {
+    position: absolute;
+    left: 36%;
+    top: 70%;
+}
+
+#use-case-one-photo {
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    height: 40%;
+    top: 5%;
+}
+
+#use-case-two-photo {
+    position: absolute;
+    left: 55%;
+    height: 40%;
+    top: 55%;
+}
+
+#use-case-one-words {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#use-case-header {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.use-case-subheader {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    top: 10px;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+#use-case-two-words {
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    font-size: 32px;
+    font-weight: 800;
+    width: 50%;
+}

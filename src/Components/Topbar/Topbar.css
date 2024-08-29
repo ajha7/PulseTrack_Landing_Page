@@ -1,0 +1,27 @@
+#pulse-track-logo-image {
+    position: absolute;
+    background-color: transparent;
+}
+
+#pulsetrack-text {
+    position: relative;
+    top: 5%;
+    color: white
+}
+
+#pulsetrack-logo {
+    position: absolute;
+    right: 87.5%;
+    top: 25%
+}
+
+#topbar-buttons {
+    position: absolute;
+    left: 75%;
+    color: white;
+}
+
+#topbar-appbar {
+    background-color: black;
+}
+
